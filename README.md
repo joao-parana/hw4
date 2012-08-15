@@ -15,6 +15,9 @@ Após salvar o arquivo execute o comando abaixo no Terminal.
 	
 	source ~/.bashrc
 	
+Para implementar Autenticação na Aplicação veja este link abaixo:
+
+[http://rubysource.com/rails-userpassword-authentication-from-scratch-part-ii](http://rubysource.com/rails-userpassword-authentication-from-scratch-part-ii/) 
 	
 Novidades após o comando :
     

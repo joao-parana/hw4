@@ -3,7 +3,11 @@ hw4_rottenpotatoes
 
 hw4_rottenpotatoes from SaaS course
 
-Novidades após o comando bundle install --without production
+Novidades após o comando :
+    
+    bundle install --without production
+    
+Resultado:
 
     Installing rspec-core (2.8.0) 
     Installing rspec-expectations (2.8.0) 

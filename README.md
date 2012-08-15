@@ -25,7 +25,7 @@ Outros comandos executados:
 	rake cucumber
 
 
-Agora alterando o database:
+Agora alterando o database -  Arquivo db/migrate/20120815134200_add_column_director.rb  :
 
     class AddColumnDirector < ActiveRecord::Migration
 	  def up
@@ -82,6 +82,21 @@ Feature provida pelos instrutores em [http://pastebin.com/L6FYWyV7](http://paste
 	  Then  I should be on the home page
 	  And   I should see "'Alien' has no director info"
 	
+
+Então altero o arquivo features/suport/paths.rb adicionando 
+
+    # início da alteração
+    when /^the (edit|details) page for "(.*)"$/
+      movie = Movie.find_by_title($2)
+      $1 == "edit" ? edit_movie_path(movie) : movie_path(movie)
+
+    when /^the Similar Movies page for "(.*)"$/
+      movie = Movie.find_by_title($1)
+      same_director_path(movie)
+    
+    # fim da alteração
+
+Faltam ainda os controlers e views.
 
 			
 	

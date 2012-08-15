@@ -14,4 +14,11 @@ Novidades após o comando bundle install --without production
     Installing simplecov (0.4.2) 
 
 
+Outros comandos executados:
 
+    rails generate cucumber:install capybara 
+	rails generate cucumber_rails_training_wheels:install 
+	rails generate rspec:install 
+	
+	
+	

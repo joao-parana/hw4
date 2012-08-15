@@ -20,9 +20,10 @@ Outros comandos executados:
 	rails generate cucumber_rails_training_wheels:install 
 	rails generate rspec:install 
 	rake db:migrate
-	rake db:test:prepare
+	# rake db:test:prepare
 	rake spec
 	rake cucumber
+
 	
 	
 	

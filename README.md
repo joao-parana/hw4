@@ -3,6 +3,19 @@ hw4_rottenpotatoes
 
 hw4_rottenpotatoes from SaaS course
 
+Para habilitar as cores no Terminal coloque os comandos abaixo no arquivo ~/.bashrc
+
+    export CLICOLOR=1
+	export LSCOLORS=GxFxCxDxBxegedabagaced
+	alias ls="ls -G"
+	alias ll="ls -l"
+	git config --global color.ui true
+	
+Após salvar o arquivo execute o comando abaixo no Terminal.
+	
+	source ~/.bashrc
+	
+	
 Novidades após o comando :
     
     bundle install --without production

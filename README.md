@@ -115,6 +115,21 @@ Então altero o arquivo features/suport/paths.rb adicionando
       movie = Movie.find_by_title($2)
       $1 == "edit" ? edit_movie_path(movie) : movie_path(movie)
 
+Nossa primeira *Step Definition* era:
+
+    Given /the following movies exist/ do |movies_table|
+	  movies_table.hashes.each do |movie|
+	    # each returned element will be a hash whose key is the table header.
+	    # you should arrange to add that movie to the database here.
+	    my_movie = Movie.create!(movie)
+	  end
+	end
+
+Alteramos a linha interna que cria o Movie para:
+
+    Movie.create(:title => movie['title'], :rating => movie['rating'], :director => movie['director'], :release_date => movie['release_date'])
+		
+
 Faltam ainda os controlers e views.
 
 Altere a App de forma que possamos editar um video existente adicionando a informação do Nome do Diretor. Comecemos pela View **edit.html.haml**

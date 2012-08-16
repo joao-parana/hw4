@@ -169,7 +169,7 @@ Precisamos criar um método no Controler **movies_controller**
 
 No Model (movie.rb) crio a constante: 
  
-  class Movie::NoDirectorInformation < StandardError; end
+    class Movie::NoDirectorInformation < StandardError; end
 
 e o método :
 

@@ -193,6 +193,12 @@ Não podemos esquecer de criar o Roteamento em **config/routes.rb**
 
     match 'movies/same_director/:id' => 'movies#same_director', :as => :same_director
   
+A filosifia Rails inclui diversos princípios guia:
+
+* DRY – “Don’t Repeat Yourself” – sugere que escrever o mesmo código várias vezes é uma coisa ruim.
+* Convenção ao invés de Configuração – significa que o Rails faz suposições sobre o que você quer fazer e como você estará fazendo isto, em vez de deixá-lo mudar cada minúscula coisa através de intermináveis arquivos de configuração.
+* REST é o melhor modelo para aplicações web – organizar sua aplicação em torno de recursos e verbos HTTP padrão é o modo mais rápido para proceder.
+
 Devido as características **Convenção ao invés de Configuração** do Ruby On Rails devemos também criar uma view **app/views/movies/same_director.html.haml**. 
 
     -#  This file is app/views/movies/same_director.html.haml

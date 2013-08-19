@@ -1,8 +1,4 @@
-hw4_rottenpotatoes
-==================
-
-hw4_rottenpotatoes from SaaS course
------------------------------------
+## hw4
 
 Para habilitar as cores no Terminal coloque os comandos abaixo no arquivo ~/.bashrc
 
